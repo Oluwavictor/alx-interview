@@ -4,7 +4,11 @@ UTF-8 Validation
 """
 
 def validUTF8(data) -> bool:
-    """ Check valid utf8"""
+    """ 
+    Checks if a list of integers are valid UTF-8 codepoints.
+    :param data:
+    :return:
+    """
     num_bytes = 0
     for bytes in data:
         mask = 1 << 7
