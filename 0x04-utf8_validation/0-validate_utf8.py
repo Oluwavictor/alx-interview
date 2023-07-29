@@ -6,7 +6,6 @@ UTF-8 Validation
 def validUTF8(data) -> bool:
     """ Check valid utf8"""
     num_bytes = 0
-
     for bytes in data:
         mask = 1 << 7
         if not num_bytes:
