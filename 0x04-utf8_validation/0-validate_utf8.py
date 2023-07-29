@@ -14,7 +14,7 @@ def validUTF8(data) -> bool:
         mask = 1 << 7
         if not num_bytes:
             while bytes & mask:
-                num_bytes = num_bytes + 1
+                num_bytes += 1
                 mask >>= 1
             if not num_bytes:
                 continue
